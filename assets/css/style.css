@@ -2,19 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
@@ -24,33 +11,33 @@
   /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
   );
   --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
+    to bottom right,
+    hsla(240, 1%, 18%, 0.251) 0%,
     hsla(240, 2%, 11%, 0) 100%
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
+    to bottom right,
+    hsl(45, 100%, 71%) 0%,
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
+    135deg,
+    hsla(45, 100%, 71%, 0.251) 0%,
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
     hsla(0, 0%, 25%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
+    to right,
+    hsl(45, 100%, 72%),
     hsl(35, 100%, 68%)
   );
 
@@ -95,7 +82,7 @@
   /**
    * shadow
    */
-  
+
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
@@ -110,8 +97,6 @@
   --transition-2: 0.5s ease-in-out;
 
 }
-
-
 
 
 
@@ -156,8 +141,6 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
-
-
 
 
 
@@ -292,21 +275,11 @@ article.active {
   z-index: -1;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #MAIN
-\*-----------------------------------*/
-
 main {
   margin: 15px 12px;
   margin-bottom: 75px;
   min-width: 259px;
 }
-
-
 
 
 
@@ -448,8 +421,6 @@ main {
 
 
 
-
-
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
@@ -489,8 +460,6 @@ main {
 
 
 
-
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -509,7 +478,7 @@ main {
 
 
 /**
- * #service 
+ * #service
  */
 
 .service { margin-bottom: 35px; }
@@ -557,13 +526,14 @@ main {
 
 
 /**
- * #testimonials 
+ * #testimonials
  */
 
 .testimonials { margin-bottom: 30px; }
 
 .testimonials-title { margin-bottom: 20px; }
 
+/* The original testimonials list is used elsewhere; keep it for compatibility */
 .testimonials-list {
   display: flex;
   justify-content: flex-start;
@@ -723,7 +693,7 @@ main {
 
 
 /**
- * #clients 
+ * #clients
  */
 
 .clients { margin-bottom: 15px; }
@@ -758,8 +728,6 @@ main {
 
 
 
-
-
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -768,7 +736,7 @@ main {
 
 
 /**
- * education and experience 
+ * education and experience
  */
 
 .timeline { margin-bottom: 30px; }
@@ -831,7 +799,7 @@ main {
 
 
 /**
- * skills 
+ * skills
  */
 
 .skills-title { margin-bottom: 20px; }
@@ -866,8 +834,6 @@ main {
   height: 100%;
   border-radius: inherit;
 }
-
-
 
 
 
@@ -1028,8 +994,6 @@ main {
 
 
 
-
-
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
@@ -1113,8 +1077,6 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-
-
 
 
 
@@ -1223,8 +1185,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-
-
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
@@ -1244,15 +1204,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO, BLOG
    */
 
   .project-img,
   .blog-banner-box { height: auto; }
 
 }
-
-
 
 
 
@@ -1545,6 +1503,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+
+
 /**
  * responsive larger than 768px screen
  */
@@ -1638,9 +1598,8 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
-  
-}
 
+}
 
 
 
@@ -1681,7 +1640,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * MAIN 
+   * MAIN
    */
 
   main { margin-bottom: 60px; }
@@ -1755,7 +1714,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .blog-banner-box { height: 230px; }
 
 }
-
 
 
 
@@ -1879,4 +1837,142 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+
+/* ---------- Coding Profiles (replaces testimonials) ---------- */
+
+/* reuse container spacing */
+#coding-profiles { padding-top: 2.2rem; padding-bottom: 2.2rem; }
+
+/* list grid */
+.profiles-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* each card */
+/* Make sure profile cards never let image overflow the box */
+.profile-card {
+  display:flex;
+  gap: 1rem;
+  align-items:center;              /* center vertically to avoid overlap */
+  padding: .9rem;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(0,0,0,0.03));
+  box-shadow: 0 6px 22px rgba(0,0,0,0.55);
+  cursor: pointer;
+  transition: transform .16s ease, box-shadow .16s ease;
+  overflow: hidden;                /* IMPORTANT: prevents logo overflow */
+}
+.profile-card:focus,
+.profile-card:hover { transform: translateY(-6px); box-shadow: 0 14px 36px rgba(0,0,0,0.65); outline: none; }
+
+/* fixed-size thumbnail container so logos can't push into the text */
+.profile-thumb {
+  min-width: 64px;
+  min-height: 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  overflow: hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(255,255,255,0.02);
+  flex-shrink:0;
+  padding: 6px;            /* inner padding so icon doesn't touch edges */
+  box-sizing: border-box;
+}
+
+/* constrain the image strictly and preserve aspect ratio */
+.profile-thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;     /* preserve logo aspect ratio */
+  display:block;
+}
+
+/* meta */
+.profile-meta { flex:1; min-width:0; } /* min-width:0 allows text to wrap correctly in flex */
+.profile-meta .h4 { margin: 0 0 .15rem 0; font-weight:700; color:#fff; }
+.profile-handle { font-size:.86rem; color: rgba(255,255,255,0.65); margin: 0 0 .35rem 0; }
+.profile-desc { margin:0; color: rgba(255,255,255,0.72); font-size:.95rem; line-height:1.35; }
+
+/* modal tweaks */
+.profile-modal { max-width: 860px; width: calc(100% - 48px); border-radius: 14px; padding: 1.2rem; display:flex; gap:1.2rem; align-items:flex-start; }
+.modal-img-wrapper { display:flex; flex-direction:column; align-items:center; gap:.7rem; }
+.modal-avatar-box img { border-radius: 8px; }
+
+/* button link */
+.profile-modal .button { display:inline-block; padding:.5rem .85rem; border-radius:8px; background: rgba(255, 200, 55, 0.08); color:#ffd66a; text-decoration:none; font-weight:600; }
+
+/* responsive */
+@media (max-width: 900px) {
+  .profiles-list { grid-template-columns: 1fr; }
+  .profile-card { gap: .75rem; padding:.75rem; }
+  .profile-thumb { min-width: 56px; min-height: 56px; width:56px; height:56px; padding:5px; }
+  .profile-modal { flex-direction:column; padding:.9rem; }
+}
+
+
+/* ---------- Modal / profile preview fixes ---------- */
+
+/* make sure modal overlay sits above everything */
+.modal-container { z-index: 9998; }
+.modal-container.active { z-index: 99998; }
+
+/* modal card sizing + internal scrolling */
+.testimonials-modal.profile-modal,
+.testimonials-modal {
+  max-width: 920px;         /* maximum width of the modal */
+  width: calc(100% - 40px); /* responsive */
+  max-height: calc(100vh - 80px); /* keep modal inside screen */
+  overflow: auto;           /* modal content can scroll if needed */
+  box-sizing: border-box;
+}
+
+/* constrain the profile image inside the modal */
+.modal-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Modal avatar (the profile logo) */
+.modal-avatar-box img[data-modal-img],
+.modal-avatar-box img {
+  max-width: 160px;   /* size limit for logos */
+  max-height: 160px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+/* If you have a decorative large image (quote icon) hide/resize it */
+.testimonials-modal img[alt="quote icon"],
+.modal-img-wrapper > img:not(.modal-avatar-box img) {
+  max-width: 120px;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+/* prevent page scroll when body has no-scroll class (controlled by JS) */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* small responsive tweak */
+@media (max-width: 700px) {
+  .modal-avatar-box img[data-modal-img],
+  .modal-avatar-box img { max-width: 120px; max-height: 120px; }
 }

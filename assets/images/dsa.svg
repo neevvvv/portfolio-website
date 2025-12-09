@@ -1,0 +1,35 @@
+<!-- icon-dsa.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="160" height="160" role="img" aria-label="Data Structures and Algorithms icon">
+  <defs>
+    <style>
+      .stroke { fill: none; stroke: #ffd66a; stroke-width: 2.8; stroke-linecap: round; stroke-linejoin: round; }
+      .node { fill: #ffd66a; stroke: #ffd66a; stroke-width: 1; }
+      .bg { fill: transparent; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="64" height="64" rx="8"/>
+
+  <!-- top node -->
+  <circle class="node" cx="32" cy="10.5" r="4.2"/>
+
+  <!-- middle row -->
+  <circle class="node" cx="20" cy="26.5" r="3.6"/>
+  <circle class="node" cx="44" cy="26.5" r="3.6"/>
+
+  <!-- bottom row -->
+  <circle class="node" cx="14" cy="44" r="3.2"/>
+  <circle class="node" cx="32" cy="44" r="3.2"/>
+  <circle class="node" cx="50" cy="44" r="3.2"/>
+
+  <!-- connections -->
+  <path class="stroke" d="M32 14.5 L20 23.5" />
+  <path class="stroke" d="M32 14.5 L44 23.5" />
+  <path class="stroke" d="M20 29.5 L14 41.5" />
+  <path class="stroke" d="M20 29.5 L32 41.5" />
+  <path class="stroke" d="M44 29.5 L32 41.5" />
+  <path class="stroke" d="M44 29.5 L50 41.5" />
+
+  <!-- subtle bracket box (represents structured container) -->
+  <rect x="10" y="8" width="44" height="48" rx="6" fill="none" stroke="rgba(255,214,106,0.06)" stroke-width="2"/>
+</svg>
