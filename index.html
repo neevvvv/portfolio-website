@@ -1,681 +1,954 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- custom css link -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- google font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <!-- #MAIN -->
+    <main>
+      <!-- #SIDEBAR -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/WhatsApp Image 2024-11-05 at 20.39.58_66aad33f.jpg"
+              alt="Neev Sahu"
+              width="80"
+            />
+          </figure>
 
-<body>
-  <!-- #MAIN -->
-  <main>
-    <!-- #SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/WhatsApp Image 2024-11-05 at 20.39.58_66aad33f.jpg" alt="Neev Sahu" width="80" />
-        </figure>
+          <div class="info-content">
+            <h1 class="name" title="Neev Sahu">Neev Sahu</h1>
+            <p class="title">Software Developer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Neev Sahu">Neev Sahu</h1>
-          <p class="title">Software Developer</p>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:sahuneev8@gmail.com" class="contact-link">sahuneev8@gmail.com</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+919358527388" class="contact-link">+91-9358527388</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="2005-12-01">December 01, 2005</time>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Bhopal, Madhya Pradesh, India</address>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://github.com/neevvvv" class="social-link" target="_blank" rel="noopener noreferrer">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/neev-sahu/" class="social-link" target="_blank" rel="noopener noreferrer">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/neevsahu__" class="social-link" target="_blank" rel="noopener noreferrer">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-    <!-- #main-content -->
-    <div class="main-content">
-      <!-- #NAVBAR -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- #ABOUT -->
-      <article class="about  active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I’m an Electronics and Communication Engineering student with a strong passion for software development,
-            competitive programming, and problem-solving. I actively practice on LeetCode, CodeChef, and Codeforces,
-            where I focus on improving my algorithmic thinking and solution efficiency through continuous challenge-based
-            learning.
-          </p>
-
-          <p>
-            Along with competitive programming, I have solid experience in Full Stack Development and a strong
-            foundation in Data Structures & Algorithms. I’m skilled in C, C++, Python, HTML, CSS, and JavaScript, and I
-            enjoy building intuitive, functional applications while writing clean and optimized code.
-          </p>
-
-          <p>
-            What drives me is the process of breaking down complex problems, understanding systems deeply, and creating
-            impactful solutions. I’m always eager to explore new technologies, contribute to real-world projects, and
-            continue growing as an engineer and developer.
-          </p>
-        </section>
-
-        <!-- service -->
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="design icon" width="40" />
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Full Stack Development</h4>
-                <p class="service-item-text">
-                  Building responsive, scalable web applications with modern technologies.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:sahuneev8@gmail.com" class="contact-link"
+                  >sahuneev8@gmail.com</a
+                >
               </div>
             </li>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/dsa.svg" alt="Web development icon" width="40" />
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Structures and Algorithms</h4>
-                <p class="service-item-text">
-                  Solving complex problems with optimized and efficient algorithms.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/cp.svg" alt="mobile app icon" width="40" />
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Competitive Programming</h4>
-                <p class="service-item-text">
-                  Active on LeetCode, CodeChef, and Codeforces to enhance problem-solving skills.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+919358527388" class="contact-link"
+                  >+91-9358527388</a
+                >
               </div>
             </li>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40" />
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
               </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="2005-12-01">December 01, 2005</time>
+              </div>
+            </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Bhopal, Madhya Pradesh, India</address>
               </div>
             </li>
           </ul>
-        </section>
 
-        <!-- Coding Profiles (replaces Testimonials) -->
-        <section class="testimonials" id="coding-profiles">
-          <h3 class="h3 testimonials-title">Coding Profiles</h3>
-          <!-- <p class="section-subtitle" style="margin-top:.4rem; margin-bottom:1.1rem;">
-            My public coding profiles — click a card to view more details.
-          </p> -->
+          <div class="separator"></div>
 
-          <ul class="testimonials-list profiles-list">
-            <!-- Profile Card: GitHub -->
-            <li class="testimonials-item profile-item" data-profile='{
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://github.com/neevvvv"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/neev-sahu/"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/neevsahu__"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- #main-content -->
+      <div class="main-content">
+        <!-- #NAVBAR -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- #ABOUT -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I’m an Electronics and Communication Engineering student with a
+              strong passion for software development, competitive programming,
+              and problem-solving. I actively practice on LeetCode, CodeChef,
+              and Codeforces, where I focus on improving my algorithmic thinking
+              and solution efficiency through continuous challenge-based
+              learning.
+            </p>
+
+            <p>
+              Along with competitive programming, I have solid experience in
+              Full Stack Development and a strong foundation in Data Structures
+              & Algorithms. I’m skilled in C, C++, Python, HTML, CSS, and
+              JavaScript, and I enjoy building intuitive, functional
+              applications while writing clean and optimized code.
+            </p>
+
+            <p>
+              What drives me is the process of breaking down complex problems,
+              understanding systems deeply, and creating impactful solutions.
+              I’m always eager to explore new technologies, contribute to
+              real-world projects, and continue growing as an engineer and
+              developer.
+            </p>
+          </section>
+
+          <!-- service -->
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Full Stack Development</h4>
+                  <p class="service-item-text">
+                    Building responsive, scalable web applications with modern
+                    technologies.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/dsa.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Data Structures and Algorithms
+                  </h4>
+                  <p class="service-item-text">
+                    Solving complex problems with optimized and efficient
+                    algorithms.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/cp.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Competitive Programming</h4>
+                  <p class="service-item-text">
+                    Active on LeetCode, CodeChef, and Codeforces to enhance
+                    problem-solving skills.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Photography</h4>
+                  <p class="service-item-text">
+                    I make high-quality photos of any category at a professional
+                    level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Coding Profiles (replaces Testimonials) -->
+          <section class="testimonials" id="coding-profiles">
+            <h3 class="h3 testimonials-title">Coding Profiles</h3>
+
+            <ul class="testimonials-list profiles-list">
+              <!-- Profile Card: GitHub -->
+              <li
+                class="testimonials-item profile-item"
+                data-profile='{
               "platform":"GitHub",
               "handle":"github.com/neevvvv",
               "link":"https://github.com/neevvvv",
               "desc":"Repositories, projects, and contributions — active full-stack and open-source work.",
               "img":"https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-            }'>
-              <div class="content-card profile-card" role="button" tabindex="0" aria-label="Open GitHub profile">
-                <!-- <figure class="testimonials-avatar-box profile-thumb">
-                  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark-Light.png" alt="GitHub" width="60" />
-                </figure> -->
-
-                <div class="profile-meta">
-                  <h4 class="h4 testimonials-item-title">GitHub</h4>
-                  <p class="profile-handle">github.com/neevvvv</p>
-                  <p class="testimonials-text profile-desc">
-                    Repositories, projects, and contributions — active full-stack and open-source work.
-                  </p>
+            }'
+              >
+                <div
+                  class="content-card profile-card"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Open GitHub profile"
+                >
+                  <div class="profile-meta">
+                    <h4 class="h4 testimonials-item-title">GitHub</h4>
+                    <p class="profile-handle">github.com/neevvvv</p>
+                    <p class="testimonials-text profile-desc">
+                      Repositories, projects, and contributions — active
+                      full-stack and open-source work.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <!-- Profile Card: LeetCode -->
-            <li class="testimonials-item profile-item" data-profile='{
+              <!-- Profile Card: LeetCode -->
+              <li
+                class="testimonials-item profile-item"
+                data-profile='{
               "platform":"LeetCode",
               "handle":"leetcode.com/Neev_Sahu",
               "link":"https://leetcode.com/Neev_Sahu",
               "desc":"Problem solving and algorithm practice — focused on medium/hard problems and contest participation.",
               "img":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAyVBMVEUAAAD////4nxu0srG4trVmZGT9ohv/qBz/phwAAAO/v7+goKAAAAednZ2ZmZkEBATJycnt7e2QkJDn2s3p490QEBB4eHiIiIj29vbd3d2mpqbumhyMWxGjaRQQCwV3TRDYjRzKhBsbEgezdRgdHR0nJyfmlRyAVBBLS0s8PDy7eAtkQhJWOQ5CLA2VYBTunSzWw68uHgqMUwAiFghXV1cwMDA3JQrBn3p2RgDnuITmyq3roD7duZLgwaDw9/5OPivGrJH56NhJJgDzNCWWAAAE8UlEQVR4nO2ba1vaMBiGW4S0IB4QwQMUSqNVi4c52UF3dP//R62hqCR50zUhTbqtz6d9qLvu6+7bHF8c5//J5XA4PLMNQWfYc0n2L22DrGXXXaXXso3ymh33LVe2YVZZZ3I7tmmy7K4zub1KlNW2S2doG8hhPaU5sk3Ee6oCFOfJPbY+KPCe3BPbw/oBz2S9zgFPbtMyE+RpyzLTX+Npzy7TaQXfHeSpWXviAnmyvWSBvrvaE58dgKn2xAfyVMVx/DBM5m2LTJCn/gghr4GvbTHx68zU0wg10qBREllhEnhqZPFRYGGeAevplYnYmt2YZoLeXX+dKaVqTO0zHdJMhOrWNlP/jmFK4xmkguZgzlMmyxhVUU+ZKzMjKbSm64Oelq4CE0wynpYjloE3CHlK62kVO66gMbN/54c4GI8DHCIfrKtymaDv7l0c3K9muuhjEAO2ynUFenpPzb1R0OCxyqwryFOHO+y5AWSV5wr67joD/rn7GV9ZaFwOU/EzjAlA5QdljKLgHgHwRHIfQq70U8md9UxmQLVrX8lAnvYFnkgeeFco7uplkj8TA1yhC61MoKc/rMF5VwjrZFI7O+RcoUTj+1PxRBIxrhDW9/2p780ZVxqXoaqeSKKQotK25zqCPBXeZ0ZrY7uvrc5bx4Anib9/c4XCB01M5wBTM2fMBKiwl8pCvp9MNDE5+5t5WmYexKMQX2s7WgCK3Pb5uLPHvzxpT9rD71xEaxVzueqpjk8lhhvK7XtyHLaiKuDJWTBM1i+pSToMVBWaaQYnNNOObSCSBV1SJ8Ii/zA83VLI6ZGC+iEtalf0XGur2VSBSv9KvmuBWQOfi5iUiLJ0pKnoOhdtp87VkYgt2fYqeoFwKnjqaANRKZTs10PPMQeCp5Rq/C2ycwT98Qn6oD5sxiT9/sxALeSgekWgzjaE6og+akHoQhdV5M5Ghb4le7fLDAmCpxabfX2y3XH0svNYtEQ42ICquS278GCmGeHgq07V3JZeNDLb0BPRcwMy+SlFoTn8nFm65HRsXrYUotbAy2xEe1VYeDotGqoCWz4SduMgmpSNhtuLChd6BrPgdu1VWKez+xnxCsZgzjioKtQVcDdr3xU7gJJsy/4nN1M8wxcf9VGxW3cSyWb88chDCHmxxstR6HBYxlUXvzYvaTzah678i9dVF68dWWt0BVEVddXG1EWIrjPrdGnCj1ZF66od0JczOu+Rm4quupi9MNIINQBO0wu4Yj01UKL1FlnFVRd73CWkVigFV+2Av67V3ZsAVXvemoH3lEZ37yfoSjxeAZ5KaQ6CXIlWfZAnnSP6ayRcMWNmxqT303vJXlFXIFMZnpZUkCueKkqAVqVZeU2M0Hj16TP9zDSGPJV5gwK8wcO72XW08tCO5jOg0axMTyRAM8cj8uPk9mI6vbhNYg9oySvXEwnv6gk1Vs2UcE9l2Z7SDLi6ehI3nmZjgbZr9pyw32A+FJoZQOJdPeZBecZ+7EC56n3JgdK8hMrL2Xq1f81hMlNPL3mj+pbnqay5Bc5g1Yj6Pc+TV0prZ15+/Hx+7n/N6UNH8dwwUppfiQ/3n2dIXmL8ZzPLzENgnsuQUGjt11iTaQjNdcgLp1b7Km5wOFqb8tJ/jsJA47GPYqL5GMeklcz3USPE47nJoSk/3Ukazb3BderUqVOnTp06derUqVPnH81vaOZa00PgPlsAAAAASUVORK5CYII="
-            }'>
-              <div class="content-card profile-card" role="button" tabindex="0" aria-label="Open LeetCode profile">
-                <!-- <figure class="testimonials-avatar-box profile-thumb">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/LeetCode_logo_white_no_text.svg" alt="LeetCode" width="60" />
-                </figure> -->
-
-                <div class="profile-meta">
-                  <h4 class="h4 testimonials-item-title">LeetCode</h4>
-                  <p class="profile-handle">leetcode.com/Neev_Sahu</p>
-                  <p class="testimonials-text profile-desc">
-                    Problem solving and algorithm practice — focused on medium/hard problems and contest participation.
-                  </p>
+            }'
+              >
+                <div
+                  class="content-card profile-card"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Open LeetCode profile"
+                >
+                  <div class="profile-meta">
+                    <h4 class="h4 testimonials-item-title">LeetCode</h4>
+                    <p class="profile-handle">leetcode.com/Neev_Sahu</p>
+                    <p class="testimonials-text profile-desc">
+                      Problem solving and algorithm practice — focused on
+                      medium/hard problems and contest participation.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <!-- Profile Card: CodeChef -->
-            <!-- <li class="testimonials-item profile-item" data-profile='{
-              "platform":"CodeChef",
-              "handle":"codechef.com/users/flock_cow_17",
-              "link":"https://www.codechef.com/users/flock_cow_17",
-              "desc":"Problem solving and algorithm practice — focused on medium/hard problems and contest participation.",
-              "img":"https://upload.wikimedia.org/wikipedia/en/3/30/CodeChef_new_logo.svg"
-            }'>
-              <div class="content-card profile-card" role="button" tabindex="0" aria-label="Open LeetCode profile">
-                 <figure class="testimonials-avatar-box profile-thumb">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/LeetCode_logo_white_no_text.svg" alt="LeetCode" width="60" />
-                </figure> 
-
-                <div class="profile-meta">
-                  <h4 class="h4 testimonials-item-title">LeetCode</h4>
-                  <p class="profile-handle">leetcode.com/your-leetcode-username</p>
-                  <p class="testimonials-text profile-desc">
-                    Problem solving and algorithm practice — focused on medium/hard problems and contest participation.
-                  </p>
-                </div>
-              </div>
-            </li> -->
-
-            <!-- Profile Card: CodeChef -->
-            <li class="testimonials-item profile-item" data-profile='{
+              <!-- Profile Card: CodeChef -->
+              <li
+                class="testimonials-item profile-item"
+                data-profile='{
               "platform":"CodeChef",
               "handle":"codechef.com/users/flock_cow_17",
               "link":"https://www.codechef.com/users/flock_cow_17",
               "desc":"Competitive contests, practice problems, and ranking progress on long/challenge contests.",
               "img":"https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/zruiknbedz8yqafxbazb?ik-sanitizeSvg=true"
-            }'>
-              <div class="content-card profile-card" role="button" tabindex="0" aria-label="Open CodeChef profile">
-                 <!-- <figure class="testimonials-avatar-box profile-thumb">
-                  <img src="./assets/img/profiles/codechef.png" alt="CodeChef" width="60" />
-                </figure>  -->
-
-                <div class="profile-meta">
-                  <h4 class="h4 testimonials-item-title">CodeChef</h4>
-                  <p class="profile-handle">codechef.com/users/flock_cow_17</p>
-                  <p class="testimonials-text profile-desc">
-                    Competitive contests, practice problems, and ranking progress on long/challenge contests.
-                  </p>
+            }'
+              >
+                <div
+                  class="content-card profile-card"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Open CodeChef profile"
+                >
+                  <div class="profile-meta">
+                    <h4 class="h4 testimonials-item-title">CodeChef</h4>
+                    <p class="profile-handle">
+                      codechef.com/users/flock_cow_17
+                    </p>
+                    <p class="testimonials-text profile-desc">
+                      Competitive contests, practice problems, and ranking
+                      progress on long/challenge contests.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <!-- Profile Card: Codeforces -->
-            <li class="testimonials-item profile-item" data-profile='{
+              <!-- Profile Card: Codeforces -->
+              <li
+                class="testimonials-item profile-item"
+                data-profile='{
               "platform":"Codeforces",
               "handle":"codeforces.com/profile/neev_sahu",
               "link":"https://codeforces.com/profile/neev_sahu",
               "desc":"Active in rated rounds and practicing diverse competitive problems to improve rating.",
               "img":"https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fcer3l19eex0wy900b101.jpg"
-            }'>
-              <div class="content-card profile-card" role="button" tabindex="0" aria-label="Open Codeforces profile">
-                <!-- <figure class="testimonials-avatar-box profile-thumb">
-                  <img src="./assets/img/profiles/codeforces.png" alt="Codeforces" width="60" />
-                </figure> -->
-
-                <div class="profile-meta">
-                  <h4 class="h4 testimonials-item-title">Codeforces</h4>
-                  <p class="profile-handle">codeforces.com/profile/neev_sahu</p>
-                  <p class="testimonials-text profile-desc">
-                    Active in rated rounds and practicing diverse competitive problems to improve rating.
-                  </p>
+            }'
+              >
+                <div
+                  class="content-card profile-card"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Open Codeforces profile"
+                >
+                  <div class="profile-meta">
+                    <h4 class="h4 testimonials-item-title">Codeforces</h4>
+                    <p class="profile-handle">
+                      codeforces.com/profile/neev_sahu
+                    </p>
+                    <p class="testimonials-text profile-desc">
+                      Active in rated rounds and practicing diverse competitive
+                      problems to improve rating.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- clients -->
-        <!-- <section class="clients">
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-            <li class="clients-item">
-              <a href="#"><img src="./assets/images/logo-1-color.png" alt="client logo" /></a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#"><img src="./assets/images/logo-2-color.png" alt="client logo" /></a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#"><img src="./assets/images/logo-3-color.png" alt="client logo" /></a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#"><img src="./assets/images/logo-4-color.png" alt="client logo" /></a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#"><img src="./assets/images/logo-5-color.png" alt="client logo" /></a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#"><img src="./assets/images/logo-6-color.png" alt="client logo" /></a>
-            </li>
-          </ul>
-        </section> -->
-      </article>
-
-      <!-- RESUME -->
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Maulana Azad National Institute of Technology, Bhopal</h4>
-              <span>2023-Present</span>
-              <p class="timeline-text">Bachelor's of Technology - Electronics and Communication Engineering</p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">K N Memorial Public School, Chhatarpur</h4>
-              <span>2022-2023</span>
-              <p class="timeline-text">Intermediate</p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Kendriya Vidyalaya Chhatarpur</h4>
-              <span>2020 — 2021</span>
-              <p class="timeline-text">Matriculation</p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Head-Team Management, ISTE SC, MANIT</h4>
-              <span>June,2025 — Present</span>
-              <p class="timeline-text">Led progress tracking, performance evaluations, and team motivation initiatives to drive productivity.</p>
-              <p class="timeline-text">Streamlined communication channels between 3 sub-teams and senior coordinators, resulting in the successful execution of 5
-major club events (e.g., hackathon, workshop) and achieving 100% alignment with strategic club goals.</p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Core Team Member, MAFFICK, NITB</h4>
-              <span>Sept 2024 - Oct 2024</span>
-              <p class="timeline-text">Directed PR campaigns and outreach initiatives for Maffick’24, Central India’s premier techno-cultural fest, expanding reach
-to over 8,000+ attendees and securing 15+ media partnerships.</p>
-                <p class="timeline-text">Boosted event reach by 50% through cross-functional collaboration, marketing collateral, and data-driven digital channels.</p>
-            </li>
-
-            <!-- <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-              <span>2010 — 2013</span>
-              <p class="timeline-text">Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos
-                dolores et quas molestias exceptur.</p>
-            </li> -->
-          </ol>
-        </section>
-
-        <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">C (Programming Language)</h5>
-                <data value="100">100%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">C++ (Programming Language)</h5>
-                <data value="100">100%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Python (Programming Language)</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">HTML</h5>
-                <data value="100">100%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">CSS</h5>
-                <data value="90">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">JavaScript</h5>
-                <data value="80">80%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">React.js</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Node.js</h5>
-                <data value="60">60%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Express.js</h5>
-                <data value="60">60%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">TaliwindCSS</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">SQL</h5>
-                <data value="90">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!-- PORTFOLIO -->
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-            <li class="filter-item"><button data-filter-btn>Web design</button></li>
-            <li class="filter-item"><button data-filter-btn>Applications</button></li>
-            <li class="filter-item"><button data-filter-btn>Web development</button></li>
-          </ul>
-
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
-            </button>
-
-            <ul class="select-list">
-              <li class="select-item"><button data-select-item>All</button></li>
-              <li class="select-item"><button data-select-item>Web design</button></li>
-              <li class="select-item"><button data-select-item>Applications</button></li>
-              <li class="select-item"><button data-select-item>Web development</button></li>
+              </li>
             </ul>
+          </section>
+
+          <!-- clients (removed/commented out) -->
+        </article>
+
+        <!-- RESUME -->
+        <article class="resume" data-page="resume">
+          <header><h2 class="h2 article-title">Resume</h2></header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Maulana Azad National Institute of Technology, Bhopal
+                </h4>
+                <span>2023-Present</span>
+                <p class="timeline-text">
+                  Bachelor's of Technology - Electronics and Communication
+                  Engineering
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  K N Memorial Public School, Chhatarpur
+                </h4>
+                <span>2022-2023</span>
+                <p class="timeline-text">Intermediate</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Kendriya Vidyalaya Chhatarpur
+                </h4>
+                <span>2020 — 2021</span>
+                <p class="timeline-text">Matriculation</p>
+              </li>
+            </ol>
+          </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Head-Team Management, ISTE SC, MANIT
+                </h4>
+                <span>June,2025 — Present</span>
+                <p class="timeline-text">
+                  Led progress tracking, performance evaluations, and team
+                  motivation initiatives to drive productivity.
+                </p>
+                <p class="timeline-text">
+                  Streamlined communication channels between 3 sub-teams and
+                  senior coordinators, resulting in the successful execution of
+                  5 major club events (e.g., hackathon, workshop) and achieving
+                  100% alignment with strategic club goals.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Core Team Member, MAFFICK, NITB
+                </h4>
+                <span>Sept 2024 - Oct 2024</span>
+                <p class="timeline-text">
+                  Directed PR campaigns and outreach initiatives for Maffick’24,
+                  Central India’s premier techno-cultural fest, expanding reach
+                  to over 8,000+ attendees and securing 15+ media partnerships.
+                </p>
+                <p class="timeline-text">
+                  Boosted event reach by 50% through cross-functional
+                  collaboration, marketing collateral, and data-driven digital
+                  channels.
+                </p>
+              </li>
+              <!-- <li class="timeline-item"> <h4 class="h4 timeline-item-title">Web designer</h4> <span>2010 — 2013</span> <p class="timeline-text">Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.</p> </li> -->
+            </ol>
+          </section>
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">C</h5>
+                  <data value="100">100%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">C++</h5>
+                  <data value="100">100%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                  <data value="100">100%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React.js</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Node.js</h5>
+                  <data value="60">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Express.js</h5>
+                  <data value="60">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">TaliwindCSS</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- PORTFOLIO -->
+        <article class="portfolio" data-page="portfolio">
+          <header><h2 class="h2 article-title">Portfolio</h2></header>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+            <ul class="project-list">
+              <!-- (projects omitted for brevity — left unchanged) -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://mern-chat-app-1-7w51.onrender.com/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/Screenshot (287).png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">MERN Chat App</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://typing-speed-test-app.onrender.com/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/Screenshot (288).png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Typing Speed Test App</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://neevblogss.onrender.com/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/Screenshot (289).png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Blogging Website</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github-profile-finder-gkmo.onrender.com/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/Screenshot (290).png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">GitHub Profile Finder</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <!-- other projects... -->
+            </ul>
+          </section>
+        </article>
+
+        <!-- CONTACT -->
+        <article class="contact" data-page="contact">
+          <header><h2 class="h2 article-title">Contact</h2></header>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <!-- Formspree form (AJAX) -->
+            <form
+              action="https://formspree.io/f/xzznjbve"
+              method="POST"
+              class="form"
+              data-form
+              novalidate
+            >
+              <!-- spam honeypot -->
+              <input type="text" name="_gotcha" style="display: none" />
+
+              <!-- subject shown in email -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="New message from your Portfolio Website"
+              />
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-end;
+                  align-items: center;
+                  gap: 12px;
+                "
+              >
+                <!-- status area (aria-live) -->
+                <div
+                  id="form-status"
+                  aria-live="polite"
+                  style="flex: 1; font-weight: 600; color: transparent"
+                ></div>
+
+                <button class="form-btn" type="submit" disabled data-form-btn>
+                  <ion-icon name="paper-plane"></ion-icon>
+                  <span>Send Message</span>
+                </button>
+              </div>
+            </form>
+          </section>
+        </article>
+      </div>
+
+      <!-- =========================
+         MODAL CONTAINER (must be outside individual articles)
+         ========================= -->
+      <div class="modal-container" data-modal-container>
+        <div class="overlay" data-overlay></div>
+
+        <section
+          class="testimonials-modal profile-modal"
+          aria-hidden="true"
+          role="dialog"
+          aria-modal="true"
+        >
+          <button
+            class="modal-close-btn"
+            data-modal-close-btn
+            aria-label="Close"
+          >
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+              <img
+                src="./assets/img/profiles/github.png"
+                alt="profile preview"
+                width="120"
+                data-modal-img
+              />
+            </figure>
+
+            <img
+              src="./assets/images/icon-quote.svg"
+              alt=""
+              style="opacity: 0.06; filter: none"
+            />
           </div>
 
-          <ul class="project-list">
-            <!-- (projects omitted for brevity — left unchanged) -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy" />
-                </figure>
-                <h3 class="project-title">Finance</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-            <!-- other projects... -->
-          </ul>
-        </section>
-      </article>
-
-      <!-- BLOG -->
-      <article class="blog" data-page="blog">
-        <header><h2 class="h2 article-title">Blog</h2></header>
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <!-- blog items omitted for brevity -->
-          </ul>
-        </section>
-      </article>
-
-      <!-- CONTACT -->
-      <article class="contact" data-page="contact">
-        <header><h2 class="h2 article-title">Contact</h2></header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd" width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input />
+          <div class="modal-content">
+            <h4 class="h3 modal-title" data-modal-title>Platform</h4>
+            <p
+              class="profile-handle modal-handle"
+              style="color: rgba(255, 255, 255, 0.75); margin: 0.25rem 0"
+            ></p>
+            <div class="modal-stats" style="margin-bottom: 0.6rem"></div>
+            <div data-modal-text>
+              <p class="modal-desc"></p>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
-    </div>
-
-    <!-- =========================
-         MODAL CONTAINER (moved OUTSIDE of the about/article)
-         This must be directly under <main> so it can overlay the whole page.
-         ========================= -->
-    <div class="modal-container" data-modal-container>
-      <div class="overlay" data-overlay></div>
-
-      <section class="testimonials-modal profile-modal" aria-hidden="true" role="dialog" aria-modal="true">
-        <button class="modal-close-btn" data-modal-close-btn aria-label="Close">
-          <ion-icon name="close-outline"></ion-icon>
-        </button>
-
-        <div class="modal-img-wrapper">
-          <figure class="modal-avatar-box">
-            <!-- default modal image; script will replace src when opening -->
-            <img src="./assets/img/profiles/github.png" alt="profile preview" width="120" data-modal-img />
-          </figure>
-
-          <img src="./assets/images/icon-quote.svg" alt="" style="opacity:0.06; filter:none;" />
-        </div>
-
-        <div class="modal-content">
-          <h4 class="h3 modal-title" data-modal-title>Platform</h4>
-          <p class="profile-handle modal-handle" style="color:rgba(255,255,255,0.75); margin: .25rem 0;"></p>
-          <div class="modal-stats" style="margin-bottom:.6rem;"></div>
-          <div data-modal-text>
-            <p class="modal-desc"></p>
+            <a
+              class="button"
+              href="#"
+              target="_blank"
+              data-modal-link
+              style="margin-top: 0.9rem"
+              >Visit profile</a
+            >
           </div>
+        </section>
+      </div>
+      <!-- end modal -->
+    </main>
 
-          <a class="button" href="#" target="_blank" data-modal-link style="margin-top:.9rem;">Visit profile</a>
-        </div>
-      </section>
-    </div>
-    <!-- end modal -->
+    <!-- custom js link -->
+    <script src="./assets/js/script.js"></script>
 
-  </main>
+    <!-- Form AJAX + small UI handler -->
+    <script>
+      (function () {
+        "use strict";
 
-  <!-- custom js link -->
-  <script src="./assets/js/script.js"></script>
+        const FORM_ENDPOINT = "https://formspree.io/f/xzznjbve";
+        const form = document.querySelector("form[data-form]");
+        const formInputs = document.querySelectorAll("[data-form-input]");
+        const formBtn = document.querySelector("[data-form-btn]");
+        const statusEl = document.getElementById("form-status");
 
-  <!-- ionicon link -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+        if (!form) return;
+
+        // Keep the original enable/disable behavior
+        function checkFormValidity() {
+          if (form.checkValidity()) {
+            formBtn.removeAttribute("disabled");
+          } else {
+            formBtn.setAttribute("disabled", "");
+          }
+        }
+
+        formInputs.forEach((input) => {
+          input.addEventListener("input", checkFormValidity);
+        });
+
+        // helper to show status message
+        function showStatus(message, success = true, timeout = 3500) {
+          statusEl.textContent = message;
+          statusEl.style.color = success ? "#ffd66a" : "#ff6b6b";
+          // make it visible for users with visual styles
+          statusEl.style.opacity = "1";
+          // reset after timeout
+          setTimeout(() => {
+            statusEl.textContent = "";
+            statusEl.style.color = "transparent";
+          }, timeout);
+        }
+
+        // submit handler (AJAX)
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          if (!form.checkValidity()) {
+            // Trigger built-in validation UI
+            form.reportValidity();
+            return;
+          }
+
+          // collect data
+          const formData = new FormData(form);
+
+          // optional UI
+          formBtn.setAttribute("disabled", "");
+          const originalBtnText = formBtn.innerHTML;
+          formBtn.innerHTML = "Sending...";
+
+          try {
+            const res = await fetch(FORM_ENDPOINT, {
+              method: "POST",
+              body: formData,
+              headers: {
+                Accept: "application/json",
+              },
+            });
+
+            if (res.ok) {
+              showStatus("Message sent — thank you!", true);
+              // reset the form
+              form.reset();
+              checkFormValidity();
+            } else {
+              const data = await res.json().catch(() => ({}));
+              const errMessage =
+                data && data.error
+                  ? data.error
+                  : "Failed to send message. Try again later.";
+              showStatus(errMessage, false);
+            }
+          } catch (err) {
+            showStatus("Network error — check your connection.", false);
+          } finally {
+            formBtn.innerHTML = originalBtnText;
+            checkFormValidity();
+          }
+        });
+
+        // initial validity check
+        checkFormValidity();
+      })();
+    </script>
+
+    <!-- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
